@@ -4,12 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [dev-packages]
+ipython = "*"
+pytest = "*"
 
 [packages]
 django = "*"
-pytest-django = "*"
-pytest = "*"
-factory-boy = "*"
+django-extensions = "*"
+restless = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
