@@ -5,6 +5,9 @@ class Parent(models.Model):
     first_name = models.CharField(max_length=200)
     last_name = models.CharField(max_length=200)
 
+    def __str__(self):
+        return f'{self.first_name} {self.last_name}'
+
 
 class Student(models.Model):
     first_name = models.CharField(max_length=200)
@@ -17,3 +20,6 @@ class Student(models.Model):
     gender = models.CharField(max_length=200)
     parent = models.ForeignKey(Parent, related_name='children',
                                on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f'{self.first_name} {self.last_name}'
