@@ -6,11 +6,15 @@ name = "pypi"
 [dev-packages]
 ipython = "*"
 pytest = "*"
+factory-boy = "*"
+pytz = "*"
+ipdb = "*"
 
 [packages]
 django = "*"
 django-extensions = "*"
 restless = "*"
+pytest-django = "*"
 
 [requires]
 python_version = "3.7"
